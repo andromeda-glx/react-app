@@ -62,15 +62,25 @@ export default function Main() {
         "body": "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error"
     }];
 
-    function getAllPosts(){
+    function getAllPosts() {
         return posts.map(post => {
-            return <PostContainer />
+            return (
+                <PostContainer
+                    key={post.id}
+                    postTitle={post.title}
+                    postBody={post.body}
+                />
+
+            );
         });
     }
 
     return (
         <main>
-            {getAllPosts()}
+            <h1>All User Posts</h1>
+            <ul className="posts">
+                {getAllPosts()}
+            </ul>
         </main>
     );
 }

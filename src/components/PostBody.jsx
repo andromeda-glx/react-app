@@ -1,7 +1,7 @@
-export default function PostBody({ postContext }) {
+export default function PostBody({ postBody }) {
     return (
         <div className="post-body-container">
-            <p>{postContext}</p>
+            <p>{postBody}</p>
         </div>
     );
 }

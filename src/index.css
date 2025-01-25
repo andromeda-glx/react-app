@@ -6,7 +6,8 @@
 }
 
 body{
-    background-color: #35353b;
+    background-color: #30304e;
+    color: #fff;
 }
 
 header{
@@ -16,13 +17,19 @@ header{
 }
 
 main{
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 2rem;
     padding: 2rem;
 }
 
+.posts{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    margin-top: 2rem;
+    list-style: none;
+}
+
 .post-container{
+    cursor: pointer;
 }
 
 .post-title-container{
@@ -36,4 +43,5 @@ main{
     background-color: #eee;
     padding: 1rem;
     border-radius: 0 0 10px 10px;
+    color: #000;
 }
