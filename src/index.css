@@ -10,7 +10,30 @@ body{
 }
 
 header{
-    background-color: #8C1BE4;
+    background-color: #CE316E;
     padding: 1rem;
     color: #fff;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    padding: 2rem;
+}
+
+.post-container{
+}
+
+.post-title-container{
+    background-color: #4231CE;
+    border-radius: 10px 10px 0 0;
+    padding: 1rem;
+    color: #fff;
+}
+
+.post-body-container{
+    background-color: #eee;
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
 }
